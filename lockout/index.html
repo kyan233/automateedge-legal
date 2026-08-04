@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lockout — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Lockout, a self-control app. Your data stays on your phone.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">AutomateEdge</p>
+  <h1>Lockout — Privacy Policy</h1>
+  <p class="updated">Last updated: 4 August 2026</p>
+</header>
+
+<div class="lede">
+  <p>Lockout is a self-control app. It is built so that <strong>your data stays on
+  your phone</strong>. The developer does not operate a server, does not receive
+  your data, and has no way to see how you use the app.</p>
+</div>
+
+<h2>What the app stores, and where</h2>
+
+<p>Everything below is stored <strong>only in Lockout's private storage on your
+device</strong>:</p>
+
+<ul>
+  <li>Lapses you log ("slips"), including the tag you choose and the time.</li>
+  <li>Which apps you selected to lock. These are stored as opaque tokens provided
+      by Apple — the app cannot read the names or icons of your apps, and neither
+      can the developer.</li>
+  <li>Your lockout history and settings (durations, multiplier, break length).</li>
+  <li>The optional note you write to yourself.</li>
+  <li>Step counts and workout durations read from Apple Health (see below).</li>
+</ul>
+
+<p>Deleting the app removes all of it. There is no account, no sign-in, and no
+developer-side copy.</p>
+
+<h2>Health and fitness data</h2>
+
+<p>With your permission, Lockout reads two things from Apple Health:</p>
+
+<ul>
+  <li><strong>Step count</strong>, to show how many steps remain before a lockout ends.</li>
+  <li><strong>Workouts</strong>, to check whether you completed one long enough to
+      claim a break.</li>
+</ul>
+
+<p>We read only. Lockout never writes to Health, never stores health data in
+iCloud, and <strong>never uses health or fitness data for advertising, marketing,
+or sale to anyone</strong>. You can revoke access at any time in
+Settings → Privacy &amp; Security → Health, and the rest of the app keeps working.</p>
+
+<h2>Screen Time (Family Controls)</h2>
+
+<p>Lockout uses Apple's Screen Time APIs to shield the apps you chose and to
+notice when you pass a usage threshold you set for yourself. Authorization is for
+your own device only. Apple's design means the app receives <strong>tokens, not
+information</strong>: it can shield an app you picked, but it cannot see which
+apps you have installed, what you do in them, or your actual usage figures.</p>
+
+<h2>Optional sync — your server, not ours</h2>
+
+<p>Lockout has an optional setting where you can enter the address of a server
+<strong>you run yourself</strong>. It is blank by default and nothing is
+transmitted while it is blank. If you fill it in, the app sends your slips,
+lockout windows, usage marks and earned fitness unlocks to that address so you
+can keep your own records.</p>
+
+<p>That server is yours. The developer does not host it, cannot access it, and
+receives nothing. If you use the open-source backend from this project, it
+provides <code>GET /export</code> to download everything it holds and
+<code>DELETE /data</code> to erase it permanently.</p>
+
+<h2>What we never do</h2>
+
+<ul>
+  <li>No analytics, telemetry, or crash-reporting services.</li>
+  <li>No advertising and no ad identifiers.</li>
+  <li>No tracking, and no sharing of data with data brokers or any third party.</li>
+  <li>No third-party SDKs of any kind — the app has zero external dependencies.</li>
+</ul>
+
+<h2>Children</h2>
+
+<p>Lockout is designed for adults managing their own behaviour. It is not a
+parental-control product and has no features for monitoring another person.</p>
+
+<h2>Changes and contact</h2>
+
+<p>Material changes to this policy will be published at this address. Questions:
+<a href="mailto:kyansukhram+lockout@automateedge.ai">kyansukhram+lockout@automateedge.ai</a></p>
+
+<footer>
+  <p>AutomateEdge · <a href="../">All app policies</a></p>
+</footer>
+
+</div>
+</body>
+</html>

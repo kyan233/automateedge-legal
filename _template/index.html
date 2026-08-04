@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<!--
+  TEMPLATE — copy this folder to ../<appname>/ and fill in every {{PLACEHOLDER}}.
+  Delete any section that does not apply to the app; do NOT leave a section in
+  that claims something untrue. Apple reads this, and so do users.
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{APP_NAME}} — Privacy Policy</title>
+<meta name="description" content="Privacy policy for {{APP_NAME}}.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">AutomateEdge</p>
+  <h1>{{APP_NAME}} — Privacy Policy</h1>
+  <p class="updated">Last updated: {{DATE e.g. 4 August 2026}}</p>
+</header>
+
+<div class="lede">
+  <p>{{ONE-SENTENCE DESCRIPTION OF THE APP}} {{THE HEADLINE PRIVACY CLAIM — e.g.
+  "your data stays on your phone" — only if it is literally true.}}</p>
+</div>
+
+<h2>What the app stores, and where</h2>
+
+<p>{{on-device only / synced to X / account-based — be specific}}</p>
+
+<ul>
+  <li>{{DATA TYPE — why it is stored}}</li>
+</ul>
+
+<p>{{What deleting the app removes. Whether an account exists.}}</p>
+
+<!-- Keep this section ONLY if the app reads HealthKit. Apple requires an
+     explicit statement that health data is not used for advertising or sold. -->
+<h2>Health and fitness data</h2>
+
+<p>With your permission, {{APP_NAME}} reads {{WHAT}} from Apple Health, to
+{{WHY}}. We read only and never write. Health data is
+<strong>never used for advertising, marketing, or sale to anyone</strong>, and is
+never stored in iCloud. You can revoke access at any time in
+Settings → Privacy &amp; Security → Health.</p>
+
+<!-- Keep ONLY if the app uses Screen Time / Family Controls. -->
+<h2>Screen Time (Family Controls)</h2>
+
+<p>{{APP_NAME}} uses Apple's Screen Time APIs to {{WHAT}}. Authorization is for
+your own device only. The app receives <strong>tokens, not information</strong>:
+it cannot see which apps you have installed or what you do in them.</p>
+
+<h2>What we never do</h2>
+
+<ul>
+  <li>No analytics, telemetry, or crash-reporting services.</li>
+  <li>No advertising and no ad identifiers.</li>
+  <li>No tracking, and no sharing of data with data brokers or any third party.</li>
+  <li>{{No third-party SDKs — DELETE THIS LINE if the app has dependencies.}}</li>
+</ul>
+
+<h2>Children</h2>
+
+<p>{{Who the app is for. If it is not a child-directed app, say so plainly.}}</p>
+
+<h2>Changes and contact</h2>
+
+<p>Material changes to this policy will be published at this address. Questions:
+<a href="mailto:kyansukhram+{{appname}}@automateedge.ai">kyansukhram+{{appname}}@automateedge.ai</a></p>
+
+<footer>
+  <p>AutomateEdge · <a href="../">All app policies</a></p>
+</footer>
+
+</div>
+</body>
+</html>
